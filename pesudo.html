@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesudo</title>
+    <style>
+        h1::before {
+            content: 'Shah ';
+            color: red;
+
+        }
+
+        h1::after {
+            content: ' Mojno';
+            color: blue;
+        }
+
+        blockquote::before {
+            content: open-quote;
+            color: brown;
+            font-size: 1.5em;
+        }
+
+        blockquote::after {
+            content: close-quote;
+            color: brown;
+            font-size: 1.5em;
+        }
+
+        .section-title {
+            display: inline-block;
+        }
+
+        .section-title::after,
+        .section-title:hover:before {
+            content: '';
+            display: block;
+            background-color: brown;
+            height: 2px;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>
+        Hello world
+    </h1>
+
+    <section>
+        <h2 class="section-title">Best Quotes</h2>
+        <blockquote>Patience, persistence and perspiration make an unbeatable combination for success</blockquote>
+        <blockquote>Desire is the starting point of all achievement, not a hope, not a wish, but a keen pulsating desire
+            which transcends everything.</blockquote>
+        <blockquote>Strength and growth come only through continuous effort and struggle</blockquote>
+    </section>
+</body>
+
+</html>
